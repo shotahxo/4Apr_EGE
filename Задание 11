@@ -1,0 +1,23 @@
+from math import *
+
+l1=7
+N1=26
+i1=ceil(log2(N1))
+I1=(l1*i1)
+
+l2=4
+N2=10
+i2=ceil(log2(N2))
+I2=(l2*i2)
+
+n=45
+I=2385
+Io=I/n
+
+
+Iob=(I1+I2)/8
+Idop=int(Io-Iob)
+
+print(Idop)
+
+# Ответ: 46
