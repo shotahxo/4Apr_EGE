@@ -1,0 +1,29 @@
+s=open('17-361.txt').readlines()
+for i in range(len(s)):
+    s[i]=s[i].strip()
+    s[i]=int(s[i])
+
+
+mn=10**20
+for i in range(len(s)):
+    if abs(s[i])%100==40:
+        mn=min(mn,s[i])
+
+
+k=0
+mx=-10**20
+for i in range(len(s)-2):
+    if s[i]>mn and s[i+1]>mn and s[i+2]>mn:
+        if s[i]==s[i+1] and s[i]!=s[i+2] and s[i+1]!=s[i+2]:
+            k+=1
+            mx=max(mx,i+3)
+        elif s[i]==s[i+2] and s[i]!=s[i+1] and s[i+2]!=s[i+1]:
+            k+=1
+            mx=max(mx,i+2)
+        elif s[i+1]==s[i+2] and s[i]!=s[i+1] and s[i]!=s[i+2]:
+            k+=1
+            mx=max(mx,i+1)
+
+print(k,mx)
+
+# Ответ: 1935 11936
