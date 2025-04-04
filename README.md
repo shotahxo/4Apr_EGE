@@ -1,5 +1,6 @@
 # Письменная часть решения для заданий / Задания без кода
-# №1
+# №2
+![Image](https://github.com/user-attachments/assets/a3d3d126-ba85-4be6-b424-d14104867544)
 # №3
 # №4
 ![image](https://github.com/user-attachments/assets/9c2e9590-9868-4b40-9c82-3324f46492ee)
