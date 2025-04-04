@@ -10,6 +10,7 @@
 # №9
 ![Image](https://github.com/user-attachments/assets/76abd2e3-ea41-4aea-ae05-7bc2e6cfe654)
 # №10
+![Image](https://github.com/user-attachments/assets/c2913e8c-6f57-4dce-8f98-893708647c75)
 # №15
 ![image](https://github.com/user-attachments/assets/0f887a93-b462-4165-8626-1d612533df7c)
 # №18
