@@ -1,0 +1,31 @@
+def f19(n):
+	a='0123456789ABCDEFGHI'
+	s=''
+	while n>0:
+		ost=n%19
+		s=a[ost]+s
+		n=n//19
+	return s
+
+
+def fs(n):
+	a='0123456789ABCDEFGHI'
+	sm=0
+	for i in range(len(n)):
+		sm+=a.find(n[i])
+	
+	return sm
+	
+k=0
+for n in range(1,10001):
+	a=f19(n)
+	if fs(a)%2==0:
+		a=a[-1]+a[:-1]+'1'
+	if fs(a)%2!=0:
+		a='B'+a[1:]+a[0]
+	r=int(a,19)
+	if (r%3==0 and r%5!=0) or (r%3!=0 and r%5==0):
+		k+=1
+print(k)
+	
+# Ответ: 3984
