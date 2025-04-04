@@ -1,0 +1,22 @@
+from ipaddress import *
+
+mask='255.255.254.0'
+for A in range(255,1,-1):
+	ip = f'159.242.{A}.223'
+	net=ip_network(f'{ip}/{mask}',0)
+	for x in net:
+		f=1
+		x=bin(int(x))[2:]
+		l=x[:16]
+		r=x[16:]
+		if l.count('0')<r.count('0'):
+			pass
+		else:
+			f=0
+			break
+		
+	if f==1:
+		print(A)
+		break
+
+# Ответ: 129
