@@ -1,0 +1,22 @@
+from itertools import product
+
+p=product('014',repeat=10)
+mx=0
+for x in p:
+   s=''.join(x)
+   s=s+'<'
+   while '4<' in s or '11<' in s or '00<' in s:
+       if '11<' in s:
+           s=s.replace('11<','<9',1)
+       if '4<' in s:
+           s=s.replace('4<','<5',1)
+       if '00<' in s:
+           s=s.replace('00<','<92',1)
+   pr=1
+   for i in range(len(s)):
+       if s[i] in '0123456789':
+           pr=pr*int(s[i])
+       mx=max(mx,pr)
+print(mx)
+
+# Ответ: 9765625
