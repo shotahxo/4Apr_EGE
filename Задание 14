@@ -1,0 +1,13 @@
+def f9(n):
+	s=''
+	while n>0:
+		ost=n%9
+		s=str(ost)+s
+		n=n//9
+	return s
+
+a=f9(81**17+3**24-45)
+x=a.count('8')
+print(x)
+
+# Ответ: 10
